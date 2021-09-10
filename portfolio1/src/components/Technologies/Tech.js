@@ -22,7 +22,7 @@ const Tech = () => {
       <br />
       <SectionTitle>Tech Stack</SectionTitle>
       <SectionText>
-        I work with a variety of technologies - below are some of my skills.
+        I work with a variety of technologies - here are some of my skills.
       </SectionText>
       <List>
         <ListItem>

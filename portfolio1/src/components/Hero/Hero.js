@@ -14,7 +14,7 @@ const Hero = () => {
       <LeftSection>
         <SectionTitle main center>
           &lt;Hello World /&gt; <br />
-          My Name is Tai
+          My name is Tai
         </SectionTitle>
         <SectionText>
           I'm a fullstack software developer focused on creating awesome web
