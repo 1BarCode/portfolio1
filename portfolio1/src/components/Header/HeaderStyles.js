@@ -2,6 +2,10 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
 export const Container = styled.div`
+  // width: 100%;
+  // position: fixed;
+  // z-index: 99;
+  // background: ${(props) => props.theme.colors.background1}
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -18,7 +22,7 @@ export const Container = styled.div`
 `;
 
 export const Span = styled.span`
-  font-size: 2rem;
+  font-size: 3rem;
 `;
 
 export const Div1 = styled.div`
@@ -51,7 +55,7 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;

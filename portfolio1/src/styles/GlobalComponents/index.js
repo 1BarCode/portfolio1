@@ -1,27 +1,27 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    display: ${(props) => (props.grid ? "grid" : "flex")};
-    flex-direction: ${(props) => (props.row ? "row" : "column")}
-    padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")}
-    margin: 0 auto;
-    max-width: 1040px;
-    box-sizing: content-box;
-    position: ${(props) => (props.sticky ? "sticky" : "relative")}
-    overflow: hidden;
-    grid-template-columns: 1fr 1fr;
+  display: ${(props) => (props.grid ? "grid" : "flex")};
+  flex-direction: ${(props) => (props.row ? "row" : "column")};
+  padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
+  margin: 0 auto;
+  max-width: 1040px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
 
-    @media ${(props) => props.theme.breakpoints.md} {
-        padding: 24px 48px 0;
-        flex-direction: column;
-    }
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
 
-    @media ${(props) => props.theme.breakpoints.sm} {
-        padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")}
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
 
-        width: calc(100vw - 32px);
-        flex-direction: column;
-    }
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
 `;
 
 export const SectionTitle = styled.h2`
@@ -35,8 +35,7 @@ export const SectionTitle = styled.h2`
     #ffffff 19%,
     rbga(255, 255, 255, 0.66) 60%
   );
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
+
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
@@ -161,7 +160,7 @@ export const SecondaryBtn = styled.button`
 `;
 
 export const ButtonBack = styled.div`
-  width: ${({ alt }) => (alt ? "150px" : "262px")};
+  width: ${({ alt }) => (alt ? "150px" : "282px")};
   height: ${({ alt }) => (alt ? "52px" : "64px")};
   border-radius: 50px;
   font-size: ${({ alt }) => (alt ? "20px" : "24px")};

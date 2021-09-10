@@ -19,11 +19,45 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 
+import { projects } from "../../constants/constants";
+
 const Projects = () => {
   return (
     <Section nopadding id="projects">
       <SectionDivider />
       <SectionTitle main>Project</SectionTitle>
+      <GridContainer>
+        {projects.map(
+          ({ id, image, title, description, tags, source, visit }) => (
+            <BlogCard key={id}>
+              <Img />
+              <TitleContent>
+                <HeaderThree title>{title}</HeaderThree>
+              </TitleContent>
+              <CardInfo>{description}</CardInfo>
+              <div>
+                <TitleContent>Tech Stack</TitleContent>
+                <TagList>
+                  {tags.map((tag, index) => (
+                    <Tag key={index}>{tag}</Tag>
+                  ))}
+                </TagList>
+              </div>
+              <UtilityList>
+                <ExternalLinks href={visit} target="_blank">
+                  Video
+                </ExternalLinks>
+                <ExternalLinks href={visit} target="_blank">
+                  Demo
+                </ExternalLinks>
+                <ExternalLinks href={visit} target="_blank">
+                  Source Code
+                </ExternalLinks>
+              </UtilityList>
+            </BlogCard>
+          )
+        )}
+      </GridContainer>
     </Section>
   );
 };

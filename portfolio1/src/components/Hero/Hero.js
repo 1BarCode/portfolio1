@@ -13,14 +13,16 @@ const Hero = () => {
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hello World <br />
+          &lt;Hello World /&gt; <br />
           My Name is Tai
         </SectionTitle>
         <SectionText>
-          I'm a self-taught fullstack developer focused on creating awesome web
+          I'm a fullstack software developer focused on creating awesome web
           applications.
         </SectionText>
-        <Button>Download Resume</Button>
+        <a>
+          <Button>Download My Resume</Button>
+        </a>
       </LeftSection>
     </Section>
   );
