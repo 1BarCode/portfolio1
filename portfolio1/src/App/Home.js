@@ -1,12 +1,22 @@
-import React from 'react'
-import {Layout} from "../layout/Layout"
+import React from "react";
+
+import Hero from "../components/Hero/Hero";
+import BackgroundAnimation from "../components/BackgroundAnimation/BackgroundAnimation";
+import Projects from "../components/Projects/Projects";
+import Layout from "../layout/Layout";
+import { Section } from "../styles/GlobalComponents/index";
 
 const Home = () => {
-    return (
-        // <Layout>
+  return (
+    <Layout>
+      <Section grid>
+        <Hero />
+        <BackgroundAnimation />
+      </Section>
+      <Projects />
+      {/* <Technologies /> */}
+    </Layout>
+  );
+};
 
-        // </Layout>
-    )
-}
-
-export default Home
+export default Home;
