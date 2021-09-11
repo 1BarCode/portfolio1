@@ -23,6 +23,7 @@ const Hero = () => {
         <a
           href="https://drive.google.com/file/d/1SjmjM2wJCpK5Y3Olm5Phu_QFGIjO1pyg/view?usp=sharing"
           target="_blank"
+          rel="noreferrer"
         >
           <Button>Download My Resume</Button>
         </a>

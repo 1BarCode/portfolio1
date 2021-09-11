@@ -6,12 +6,11 @@ import {
   ExternalLinks,
   GridContainer,
   HeaderThree,
-  Hr,
   Tag,
   TagList,
   TitleContent,
   UtilityList,
-  Img,
+  IFrameContainer,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -28,18 +27,19 @@ const Projects = () => {
       <SectionTitle main>Project</SectionTitle>
       <GridContainer>
         {projects.map(
-          ({ id, image, title, description, tags, source, video, demo }) => (
+          ({ id, title, description, tags, source, video, demo }) => (
             <BlogCard key={id}>
-              {/* <Img /> */}
-              <iframe
-                width="400"
-                height="225"
+              <IFrameContainer
+                //   width="400"
+                //   height="225"
+                // width={width}
+                // height={width * 0.5625}
                 src="https://www.youtube.com/embed/0lZjYRWqVCU"
                 title="YouTube video player"
                 frameborder="5"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-              ></iframe>
+              ></IFrameContainer>
               <TitleContent>
                 <HeaderThree title>{title}</HeaderThree>
               </TitleContent>

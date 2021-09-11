@@ -7,13 +7,13 @@ import {
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
-  CompanyContainer,
+  //   CompanyContainer,
   FooterWrapper,
   LinkColumn,
   LinkItem,
   LinkList,
   LinkTitle,
-  Slogan,
+  //   Slogan,
   SocialContainer,
   SocialIconsContainer,
 } from "./FooterStyles";

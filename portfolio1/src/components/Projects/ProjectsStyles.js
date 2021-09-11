@@ -31,6 +31,17 @@ export const BlogCard = styled.div`
     width: 100%;
   }
 `;
+
+export const IFrameContainer = styled.iframe`
+  width: 400px;
+  height: 225px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    height: width * 0.5625;
+  }
+`;
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
