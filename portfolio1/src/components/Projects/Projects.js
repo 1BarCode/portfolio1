@@ -28,9 +28,18 @@ const Projects = () => {
       <SectionTitle main>Project</SectionTitle>
       <GridContainer>
         {projects.map(
-          ({ id, image, title, description, tags, source, visit }) => (
+          ({ id, image, title, description, tags, source, video, demo }) => (
             <BlogCard key={id}>
-              <Img />
+              {/* <Img /> */}
+              <iframe
+                width="400"
+                height="225"
+                src="https://www.youtube.com/embed/0lZjYRWqVCU"
+                title="YouTube video player"
+                frameborder="5"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
               <TitleContent>
                 <HeaderThree title>{title}</HeaderThree>
               </TitleContent>
@@ -44,13 +53,13 @@ const Projects = () => {
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks href={visit} target="_blank">
+                <ExternalLinks href={video} target="_blank">
                   Video
                 </ExternalLinks>
-                <ExternalLinks href={visit} target="_blank">
+                <ExternalLinks href={demo} target="_blank">
                   Demo
                 </ExternalLinks>
-                <ExternalLinks href={visit} target="_blank">
+                <ExternalLinks href={source} target="_blank">
                   Source Code
                 </ExternalLinks>
               </UtilityList>

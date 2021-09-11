@@ -17,10 +17,13 @@ const Hero = () => {
           My name is Tai
         </SectionTitle>
         <SectionText>
-          I'm a fullstack software developer focused on creating awesome web
-          applications.
+          I'm a fullstack software developer focused on creating responsive,
+          scalable and awesome web applications.
         </SectionText>
-        <a>
+        <a
+          href="https://drive.google.com/file/d/1SjmjM2wJCpK5Y3Olm5Phu_QFGIjO1pyg/view?usp=sharing"
+          target="_blank"
+        >
           <Button>Download My Resume</Button>
         </a>
       </LeftSection>
