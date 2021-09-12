@@ -18,6 +18,7 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -39,6 +40,7 @@ export const Div2 = styled.div`
   display: flex;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 24px;
     grid-area: 2 / 2 / 3 / 5;
   }
 `;
@@ -51,6 +53,11 @@ export const Div3 = styled.div`
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
   }
+`;
+
+export const ListItem = styled.li`
+  justify-content: center;
+  margin: 8px;
 `;
 
 // Navigation Links

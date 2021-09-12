@@ -15,6 +15,7 @@ import {
   NavLink,
   SocialIcons,
   Span,
+  ListItem,
 } from "./HeaderStyles";
 
 const Header = () => {
@@ -35,15 +36,15 @@ const Header = () => {
         </a>
       </Div1>
       <Div2>
-        <li>
+        <ListItem>
           <NavLink href="#projects">Project</NavLink>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <NavLink href="#tech">Tech Stack</NavLink>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <NavLink href="#about">About</NavLink>
-        </li>
+        </ListItem>
       </Div2>
       <Div3>
         <SocialIcons href="https://github.com/1BarCode" target="_blank">
