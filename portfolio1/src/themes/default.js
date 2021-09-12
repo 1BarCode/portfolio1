@@ -1,4 +1,4 @@
-export default {
+const theme = {
   fonts: {
     title: "Quicksand, sans-serif",
     main: "Quicksand, sans-serif",
@@ -19,3 +19,5 @@ export default {
     xl: "screen and (max-width: 1280px)",
   },
 };
+
+export default theme;
