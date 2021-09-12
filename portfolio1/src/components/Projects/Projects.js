@@ -44,6 +44,7 @@ const Projects = () => {
                 <HeaderThree title>{title}</HeaderThree>
               </TitleContent>
               <CardInfo>{description}</CardInfo>
+              <br />
               <div>
                 <TitleContent>Tech Stack</TitleContent>
                 <TagList>
