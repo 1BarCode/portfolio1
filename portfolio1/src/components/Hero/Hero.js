@@ -6,7 +6,7 @@ import {
   SectionText,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+import { LeftSection, NavLink } from "./HeroStyles";
 
 const Hero = () => {
   return (
@@ -19,6 +19,14 @@ const Hero = () => {
         <SectionText>
           I'm a fullstack software developer focused on creating responsive,
           scalable and awesome web applications.
+        </SectionText>
+        <SectionText>
+          I am actively seeking a position in software development, please reach
+          out to me{" "}
+          <NavLink href="#footer">
+            <strong>here</strong>
+          </NavLink>
+          .
         </SectionText>
         <a
           href="https://drive.google.com/file/d/1SjmjM2wJCpK5Y3Olm5Phu_QFGIjO1pyg/view?usp=sharing"
