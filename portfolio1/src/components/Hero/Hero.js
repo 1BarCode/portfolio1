@@ -21,7 +21,7 @@ const Hero = () => {
           scalable and awesome web applications.
         </SectionText>
         <SectionText>
-          I am actively seeking a position in software development, please reach
+          I am actively seeking a position in tech, please reach
           out to me{" "}
           <NavLink href="#footer">
             <strong>here</strong>
