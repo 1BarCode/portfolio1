@@ -7,7 +7,7 @@ export const projects = [
     tags: ["MongoDB", "Express", "React", "Node"],
     source: "https://github.com/1BarCode/react-bugtracker",
     demo: "https://zen-hive.netlify.app/auth",
-    video: "https://youtu.be/0lZjYRWqVCU",
+    video: "https://youtu.be/4P9oAQ9xUJc",
     id: 0,
   },
 ];
